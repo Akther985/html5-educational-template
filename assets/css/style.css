@@ -1,0 +1,115 @@
+
+
+
+/*****************
+start header menu
+*******************/ 
+
+.header-mega-menu {
+  display: flex;
+  justify-content: center;
+}
+.header_menu {
+  display: flex;
+  position:absolute;
+  min-height: 90px;
+  align-items: center;
+  width: 100%;
+}
+.header-mega-menu nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.header-mega-menu nav > ul >li {
+  display:inline-block;
+  position: relative;
+  padding-right: 40px;
+}
+.header-mega-menu >nav >ul >li >a {
+  font-family: 'Rubik', sans-serif;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+} 
+.header-mega-menu nav ul li a:hover {
+  color:#ff5421;
+}
+.header-mega-menu nav ul li:last-child {
+  padding-right: 0;
+}
+.header-mega-menu nav ul li a span:nth-child(2) {
+  display: none;
+}
+.header-mega-menu nav ul li a:hover span:nth-child(2) {
+  display: inline-block;
+}
+.header-mega-menu nav ul li a:hover span:nth-child(1) {
+  display: none;
+}
+
+.header-right-nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+.nav-megamenu {
+  position: absolute;
+  display: flex;
+  background-color: #ddd;
+  padding:30px !important;
+  top: 86px;
+}
+
+.nav-megamenu > li {
+  min-width:200px;
+}
+.nav-megamenu li ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color:rgba(17,17,17,.8);
+  padding: 10px 0;
+}
+.nav-megamenu {
+  display: none;
+}
+.header-mega-menu nav ul li:hover .nav-megamenu {
+  display: flex;
+}
+.ball {
+  display: none;
+}
+.nav-megamenu li ul li:hover .ball {
+  display: block;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -250px;
+  background: blue;
+}
+.nav-megamenu li ul li:hover .ball ul {
+  display: block;
+  margin: 10px;
+}
+.nav-megamenu li ul li:hover .ball ul >li {
+  min-width: 200px;
+}
+
+/*****************
+Hero Slider
+******************/
+
+.hero-slider-area {
+  min-height: 1200px;
+}
+.single-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
